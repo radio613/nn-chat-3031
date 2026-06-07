@@ -9,3 +9,18 @@ p.card-text {
   white-space: pre-wrap;
   word-break: break-all;
 }
+CSS
+/* メッセージ内の改行や連続したスペースを維持する */
+.card-text {
+  word-break: break-word;
+}
+
+/* 自分の投稿（右側）の背景をほんのり青みがかった色にする（ライトモード用） */
+[data-bs-theme="light"] .chat-bubble-me {
+  background-color: #f0f7ff;
+}
+
+/* ダークモード時の自分の投稿の背景調整 */
+[data-bs-theme="dark"] .chat-bubble-me {
+  background-color: #1e293b;
+}
